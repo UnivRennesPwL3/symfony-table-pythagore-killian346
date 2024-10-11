@@ -1,4 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block title %}Table de Pythagore{% endblock %}
 
+{% block body %}
+    <h1>{{ name }}</h1>
+    <div id="content">
+        {{ htmlResponse|raw }}  {# Utilise htmlResponse pour afficher la table #}
+    </div>
+{% endblock %}
